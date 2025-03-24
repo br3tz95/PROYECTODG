@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    background-color: #CE9A4F;
+    
+}
+
+.header {
+    width: 100%;
+    height: 61px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.logo {
+    width: 179px;
+    height: 61px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+    font-size: 14px;
+    color: #A14C16;
+    text-decoration: none;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+/* spotify */
+musica {
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Para permitir el scroll y probar el efecto */
+  }
+
+  /* Estilos para el contenedor flotante */
+  .contenedor-flotante {
+    position: fixed;
+    top: 10px; /* Se posiciona a 10px del borde superior */
+    left: 0%;
+    transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+    background-color: #A14C16; /* Color de fondo del rectángulo */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+  }
+
+  /* Estilo para el logo dentro del contenedor */
+  .contenedor-flotante img {
+    width: 30px; /* Tamaño del logo */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: -15px;
+  }
+/* spotify */
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 488.5px;
+    background-color: #1b1b13;
+    position: relative;
+}
+
+.image-box {
+    width: 100%;
+    height: 488.5px;
+    }
+    
+    .image-box img {
+        width: 100%;
+        height: 488.5px;
+        object-fit:cover;
+        z-index: 1;
+    }
+    
+    .overlay1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#a14b167c; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-text {
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        font-weight: 500;
+        width: 1000px;
+        line-height: 1.1
+    }
+    
+    .autor {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+
+
+/* Contenedor principal */
+.contenedor1 {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Altura suficiente para visualizar los cuadros */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Estilos base para los cuadros */
+.cuadro {
+    position: absolute;
+    border-radius: 47px;
+}
+
+/* Cuadro de fondo */
+.fondo {
+    width: 1249.11px;
+    height: 461.56px;
+    background-color: #847E48;
+    z-index: 1;
+    top: 0;
+}
+
+/* Cuadro del medio */
+.medio {
+    width: 1300.37px;
+    height: 480.6px;
+    background-color: #A14C16;
+    z-index: 2;
+    top: 50px; /* Se baja un poco */
+}
+
+/* Cuadro de frente */
+.frente {
+    width: 1365px;
+    height: 654.28px;
+    background-color: #EABB57;
+    z-index: 3;
+    top: 120px; /* Se baja aún más */
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #A14C16;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.linea1 {
+    width: 1134px;
+    height: 4px;
+    background-color: #A14C16;
+    border: none;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    }
+
+.texto {
+    justify-content: center;
+    padding-left: 200px;
+    padding-top: 10px;
+    padding-right: auto;
+    padding-bottom: 10px;
+
+}
+    p {
+        color: #A14C16;
+        line-height: 1.6;
+        font-size: 20px;
+        width: 917px;
+        
+        
+    }
+    
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        color: #A14C16;
+        font-size: 20px;
+    }
+    
+    .test-button {
+        display: block;
+        width: 200px;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: #a14b1671;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        font-weight: 800;
+    }
+    
+    .test-button:hover {
+        background-color: white;
+    }
+
+    .full-width-box {
+        width: 100%;
+        height: 224px;
+        overflow: hidden;
+    }
+    
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #CE9A4F;
+        opacity: 0.6; 
+        z-index: 2;
+    }
+    .overlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #847E48; 
+        opacity: 0.6; 
+        z-index: 2;
+    }
+    
+    .text-content {
+        justify-content: space-between;
+        position: relative;
+        z-index: 3;
+        font-size: 20.2px;
+        display: flex;
+        align-items: center;
+        height: 18vh;
+        width: 1700px;
+        
+    }
+    
+    .title-text {
+        width: 420px;
+        padding-left: 95px;
+        font-size: 48px;
+        color: white;
+        text-align: left;
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    .description-text {
+        width: 250px;
+        font-size: 16px;
+        color: white;
+        text-align: left;
+        margin: 0;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    .secondary-image {
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 110px;
+        z-index: 3;
+       
+    }
+
+    .footer {
+        background-color: #A14C16;
+        color: white;
+        width: 100%;
+        list-style: none;
+    }
+    
+    .footer-logo {
+        width: 348px;
+        height: 118px;
+        margin-left: 15px;
+        
+    }
+    
+    .footer-links {
+        font-size: 12px;
+        padding: 0;
+        text-align: left; 
+          
+    }
+    
+    .footer-links li {
+        margin: 1px 0; 
+        list-style-type: none;
+    }
+    
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    .footer-links a:hover {
+        list-style-type: none;
+    }
+    
+    .footer-text {
+        font-size: 14px;
+        list-style-type: none;
+        padding-right: 100px;  
+        width: 360px;
+        text-align: left;
+        color: #ffffff;
+        
+    }
+    
+    .footer-btn {
+        background-color: rgba(255, 255, 255, 0.308); 
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 2px 10px 2px 10px;
+        font-size: 14px;
+        margin: 0px 100px;   
+         
+    }
+    
+    .footer-btn:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .footer-message {
+        font-size: 14px;
+        margin: 5px 0;
+        padding-right: 100px;
+    }
+    
+    .social-icons {
+        display: flex;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-right: 100px;
+    }
+    .social-icons .icon {
+        width: 24px;
+        height: 24px;
+         
+    }
+    
+    .location-text {
+        font-size: 14px;
+        color: white;
+        padding-right: 100px;
+    }

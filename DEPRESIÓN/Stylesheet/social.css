@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #847E48;
+    height: 691.54px;
+    width: 1230px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.pantalla {
+    width: 1230px;
+    height: 691.54px;
+    position: relative;
+    height: 691.54px;
+    background-color: #847E48;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen-container {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 691.54px;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    list-style: none;
+}
+
+.imagen-container img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    top: -730px;
+    right: -300px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ce994f9f;
+    list-style: none;
+    
+}
+.contenido{
+    position: absolute;
+    width: 215px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-left: 50px;
+    line-height: 1;
+}
+
+/* Contenedor de cada rombo y su rectángulo desplegable */
+.rombo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    top: -150px;
+    right: -100px;
+}
+
+/* Estilo del rombo */
+.rombo {
+    width: 155px;
+    height: 155px;
+    background-color: #A14C16;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    top: 0px;
+}
+
+/* Texto dentro del rombo */
+.rombo .texto {
+    position: absolute;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rombo .hover {
+    opacity: 0;
+}
+
+/* Cambia el texto al pasar el mouse */
+.rombo:hover .normal {
+    opacity: 0;
+}
+
+.rombo:hover .hover {
+    opacity: 1;
+}
+
+/* Estilo del rectángulo desplegable */
+.rectangulo {
+    width: 0;
+    height: 201px;
+    background-color: #A14C16;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    left: 70px;
+}
+
+/* Posicionamiento del primer rectángulo (izquierda a derecha) */
+.izquierda .rectangulo {
+    left: 83px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+/* Posicionamiento del segundo rectángulo (derecha a izquierda) */
+.derecha .rectangulo {
+    right: 100%;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+/* Expandir el rectángulo al pasar el cursor */
+.rombo-container:hover .rectangulo {
+    width: 680px;
+}
+
+/* Expandir el rectángulo al pasar el cursor */
+.rombo-container.izquierda:hover .rectangulo.derecha {
+    width: 680px;
+}
+
+.rombo-container.derecha:hover .rectangulo.izquierda {
+    width: 680px;
+}
+.rombo-container.derecha {
+    position: absolute;
+    top: 450px; /* Aumenta este valor para bajarlo */
+    left: 300px; /* Reduce este valor para acercarlo al primer rombo */
+    z-index: 1;
+}
+
+.rombo-container.izquierda {
+    z-index: 1;
+}
+.frase-arriba{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    text-align: center;
+    top: 150px;
+    left: 700px;
+    z-index: 0;
+}
+.frase-abajo{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    text-align: center;
+    top: 470px;
+    left: 850px;
+    z-index: 0;
+}
